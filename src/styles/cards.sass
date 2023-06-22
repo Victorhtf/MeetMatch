@@ -1,0 +1,50 @@
+@use "./Mixins"
+@use "./variable" as *
+
+.card-container
+    flex-direction: column
+    @include Mixins.blur-glass
+    width: 30%
+    height: 70%
+    display: flex
+    justify-content: flex-start
+    margin-top: 20px
+    border-radius: 20px
+    
+    
+    .restaurantPhoto
+        width: 101%
+        margin: 20px 0 0px 0
+        border-radius: 10px
+        align-self: center
+    
+    
+    .division
+        display: flex
+        align-items: center
+
+        .restaurantTitle
+            width: 70%
+            margin: 3px 20px 3px 20px
+            font-weight: 600
+            font-size: 2rem
+            color: $font-color
+
+        .infos
+            color: white
+
+    .restaurantLocation
+        color: $font-color
+        margin: 3px 20px 3px 20px
+
+    .star-container
+        width: 90%
+        height: 20px
+        display: flex
+        align-items: center
+        margin: 3px 20px 3px 20px
+        gap: 3px
+    
+    .fa-star
+        color: yellow
+        gap: 200px

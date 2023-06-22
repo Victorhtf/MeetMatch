@@ -1,0 +1,25 @@
+@use "./variable" as *
+@use "./Mixins"
+    
+.selection-container-second
+    background-color: $secondary-card-color
+    @include Mixins.center
+    display: flex
+    width: 160px
+    height: 50px
+    margin-top: 20px
+    border-top-left-radius: $higlight-border
+    border-top-right-radius: $higlight-border
+    
+    .text 
+        color: white
+        background-color: $highlight-secondary-color
+        padding: 2px 20px 2px 20px
+        font-weight: 800
+        font-size: 1.3rem
+        border-radius: 50px
+
+
+    
+    
+    

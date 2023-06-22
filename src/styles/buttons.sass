@@ -1,0 +1,37 @@
+@use "./Mixins"
+@use "./variable"
+    
+.btn
+    flex-direction: row
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-top: 20px
+    width: 300px
+    height: 100px
+    gap: 2rem
+
+    .dislike-icon
+        @include Mixins.center
+        width: 90px
+        height: 90px
+        color: #ffffff
+        border-radius: 100%
+        @include Mixins.blur-glass
+        font-size: 60px
+        -webkit-box-shadow: -8px 5px 13px 0px rgba(0,0,0,0.75)
+        -moz-box-shadow: -8px 5px 13px 0px rgba(0,0,0,0.75)
+        box-shadow: -8px 5px 13px 0px rgba(0,0,0,0.75)    
+
+
+    .like-icon
+        @include Mixins.center
+        width: 90px
+        height: 90px
+        color: #fff
+        border-radius: 100%
+        @include Mixins.blur-glass
+        font-size: 60px
+        -webkit-box-shadow: -8px 5px 13px 0px rgba(0,0,0,0.75)
+        -moz-box-shadow: -8px 5px 13px 0px rgba(0,0,0,0.75)
+        box-shadow: -8px 5px 13px 0px rgba(0,0,0,0.75)    
