@@ -1,41 +1,49 @@
-import React, { useState } from 'react'
-
 import Photo from "../assets/user.png"
-import HighlightContainer from './HighlightContainer'
 
 import "../styles/Sidebar.sass"
+import Sidecard from './Sidecard'
+
+
+import mcdonaldsImage from '../assets/mcdonalds.jpg';
+import outbackImage from '../assets/outback.jpg';
+import maderoImage from '../assets/madero.png';
+import vapianoImage from '../assets/vapiano.png';
+import cookieDeliveryImage from '../assets/cookie-delivery.jpg';
+
 
 const Sidebar = () => {
-    // const = [sidebar, setSidebar] = useState(false);
+    const matches = [
+        {name: 'McDonalds', photo: mcdonaldsImage},
+        {name: 'Outback', photo: outbackImage},
+        {name: 'Madero', photo: maderoImage},
+        {name: 'Vapiano', photo: vapianoImage},
+        {name: 'Cookies Delivery', photo: cookieDeliveryImage},
+    ]
 
-    // const = handleToggle = () => {
-    //     setSidebar(!open)
-    // }
-
-    const variants = {
-        open: {width: "250px"},
-        closed: {width: "50px"}
-    }
-  return (
-    <div className='sidebar-container'>
-        <div className="secondary-content">
+    return (
+        <div className='sidebar-container'>
+          <div className="secondary-content">
             <div className="user-container">
-                <div className="photo-container">
-                    <img className="user-photo" src={Photo}></img>
-                </div>
-                <p className='user-name'>Victor Formisano</p>
+              <div className="photo-container">
+                <img className="user-photo" src={Photo} alt="User"></img>
+              </div>
+              <p className='user-name'>Victor Formisano</p>
             </div>
+          </div>
+          <div className="primary-content">
+            <div className="matches-container">
+                <h2> Matches 💜</h2>
+                <section className='items'>
+                    {matches.map((match, index) => (
+                    <Sidecard title={match.name} photo={match.photo} />
+                    ))}
+                </section>
+            </div>
+            <h2> Favorites 🔥</h2>
+            <h2> Likes ⭐</h2>
+          </div>
         </div>
-        <div className="carrousel-container">
-            <div className="selector">
-                <HighlightContainer text="Matches"/>
-                <HighlightContainer text="Explore"/>
-            </div>
-            <div className="self-content">
-            </div>
-        </div>
-    </div>
-  )
+      )
 }
 
-export default Sidebar
+export default Sidebar;

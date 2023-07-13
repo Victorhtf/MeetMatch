@@ -2,36 +2,38 @@
 @use "./variable"
     
 .btn
-    flex-direction: row
     display: flex
     align-items: center
     justify-content: center
     margin-top: 20px
-    width: 300px
-    height: 100px
+    width: 100%
+    height: 20%
     gap: 2rem
 
     .dislike-icon
-        @include Mixins.center
-        width: 90px
-        height: 90px
+        cursor: pointer
+        aspect-ratio: 1/1
+        height: 5rem
         color: #ffffff
         border-radius: 100%
-        @include Mixins.blur-glass
-        font-size: 60px
+        font-size: 2.7rem
         -webkit-box-shadow: -8px 5px 13px 0px rgba(0,0,0,0.75)
         -moz-box-shadow: -8px 5px 13px 0px rgba(0,0,0,0.75)
         box-shadow: -8px 5px 13px 0px rgba(0,0,0,0.75)    
+        @include Mixins.center
+        @include Mixins.blur-glass
 
 
     .like-icon
-        @include Mixins.center
-        width: 90px
-        height: 90px
+        cursor: pointer
+        aspect-ratio: 1/1
+        width: 5rem
         color: #fff
         border-radius: 100%
-        @include Mixins.blur-glass
-        font-size: 60px
+        font-size: 2.7rem
         -webkit-box-shadow: -8px 5px 13px 0px rgba(0,0,0,0.75)
         -moz-box-shadow: -8px 5px 13px 0px rgba(0,0,0,0.75)
         box-shadow: -8px 5px 13px 0px rgba(0,0,0,0.75)    
+        padding-top: 6px
+        @include Mixins.center
+        @include Mixins.blur-glass

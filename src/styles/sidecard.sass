@@ -1,0 +1,30 @@
+@use './Mixins'
+    
+.sidecard-container
+    width: 100%
+    border-radius: 15px
+    display: flex
+    flex-direction: column
+    place-content: center
+    overflow: hidden
+    @include Mixins.blur-glass
+    
+
+    .restaurant-image
+        justify-content: flex-start
+        align-self: center
+        width: 50px
+        height: 50px
+        object-fit: cover
+        border-radius: 10px
+        margin-bottom: 0.4rem
+
+    h5
+        text-transform: uppercase
+        padding: 0.5rem
+        text-align-last: justify
+        font-size: 0.8rem
+        justify-content:  flex-end
+        text-w
+        text-align: center
+        text-align-last:  center
