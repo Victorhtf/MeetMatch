@@ -1,6 +1,6 @@
-# CoupleEats - Couple Restaurant Decision Web App
+# MeetMatch - Couple Restaurant Decision Web App
 
-CoupleEats is a web application designed to simplify the process of choosing a restaurant for couples. The app is inspired by the famous movie matching app, where couples synchronize their accounts and get restaurant recommendations based on mutual preferences. Built with React, Sass, SQL, JSON, and external APIs for restaurants, reviews, and location data, CoupleEats aims to make dining decisions easy and enjoyable for couples.
+MeetMatch is a web application designed to simplify the process of choosing a restaurant for couples. The app is inspired by the famous movie matching app, where couples synchronize their accounts and get restaurant recommendations based on mutual preferences. Built with React, Sass, SQL, JSON, and external APIs for restaurants, reviews, and location data, CoupleEats aims to make dining decisions easy and enjoyable for couples.
 
 ## Features
 
@@ -27,7 +27,7 @@ CoupleEats is a web application designed to simplify the process of choosing a r
 
 To run this project locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/CoupleEats.git`
+  1. Clone the repository: `git clone https://github.com/your-username/MeetMatch.git`
 2. Navigate to the project directory: `cd CoupleEats`
 3. Install dependencies: `npm install`
 4. Set up the database (SQL) and update the connection settings in the app.
@@ -57,4 +57,4 @@ We welcome contributions from the community to enhance the CoupleEats app. If yo
 We value your feedback and are here to assist you. If you encounter any issues, have suggestions, or need support, please raise an issue on the GitHub repository.
 
 
-Thank you for choosing CoupleEats! We hope our web app will make restaurant decisions fun and delightful for you and your partner. If you have any questions or need further information, feel free to reach out. Bon appétit! 🍽️🥂
+Thank you for choosing MeetMatch! We hope our web app will make restaurant decisions fun and delightful for you and your partner. If you have any questions or need further information, feel free to reach out. Bon appétit! 🍽️🥂
