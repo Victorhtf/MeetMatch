@@ -2,6 +2,7 @@
 import { LuSettings } from 'react-icons/lu'
 import Cards from './Cards'
 import Buttons from "./Buttons"
+import Settings from './Teste'
 
 import "../styles/maincontent.sass"
 
@@ -13,8 +14,8 @@ const MainContent = () => {
       <div className="settings">
         <LuSettings className='icon'/>
       </div>
-      <Cards/>
-      <Buttons/>
+      <Settings/>
+
     </div>
   )
 }

@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { FaHeart } from 'react-icons/fa'
 import { CgClose } from 'react-icons/cg'
 
@@ -7,7 +5,7 @@ import "../styles/buttons.sass"
 
 const Buttons = () => {
   return (
-    <div className='btn'>
+    <div>
       <div className="dislike-icon">
         <CgClose/>
       </div>
@@ -15,6 +13,7 @@ const Buttons = () => {
         <FaHeart/>
       </div> 
     </div>
+
   )
 }
 
