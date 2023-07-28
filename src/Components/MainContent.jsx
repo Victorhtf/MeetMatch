@@ -1,10 +1,9 @@
 
 import { LuSettings } from 'react-icons/lu'
-import Cards from './Cards'
-import Buttons from "./Buttons"
-import Settings from './Teste'
+
 
 import "../styles/maincontent.sass"
+import Login from './Login'
 
 
 const MainContent = () => {
@@ -14,7 +13,7 @@ const MainContent = () => {
       <div className="settings">
         <LuSettings className='icon'/>
       </div>
-      <Settings/>
+      <Login/>
 
     </div>
   )
