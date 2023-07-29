@@ -1,9 +1,8 @@
-
 import { LuSettings } from 'react-icons/lu'
 
 
 import "../styles/maincontent.sass"
-import Login from './Login'
+import Login from '../Login'
 
 
 const MainContent = () => {
@@ -14,7 +13,6 @@ const MainContent = () => {
         <LuSettings className='icon'/>
       </div>
       <Login/>
-
     </div>
   )
 }

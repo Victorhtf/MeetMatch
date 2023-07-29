@@ -1,9 +1,8 @@
-@use "./variable"
+@use '../../Globals/variable'
 
 .form-container
     color: white
-    padding: 40px
-    height: 500px
+    padding: 10px 40px
     width: 450px
     display: flex
     flex-direction: column
@@ -16,15 +15,26 @@
     -webkit-backdrop-filter: blur(5px)
     border: 1px solid rgba(255, 255, 255, 0.3)
 
+    .cta-name
+        color: variable.$base-color
+        margin-bottom: 20px
+        margin-top: 20px
+
+    
+    .title
+        margin-bottom: 10px
+        font-size: 25px
+
     .submit
-        background-color: variable.$amarelo
+        background-color: variable.$base-color
         border: none
         padding: 10px 150px
         border-radius: 10px
-        font-weight: 900
+        font-weight: 700
         width: 100%
         margin-top: 25px
         height: 55px
+
     .label
         border-radius: 4px
         border: none
@@ -36,9 +46,11 @@
     .items
         display: flex
         justify-content: space-between
+        align-items: center
         width: 100%
         padding: 5px
         margin-top: 8px
+        margin-bottom: 20px
 
         .remember
             display: flex
@@ -46,6 +58,7 @@
             gap: 5px
             padding: 5px    
             width: 50%
+            align-self: center
     
         .help  
             justify-self: end
@@ -57,10 +70,12 @@
         display: flex
         align-items: center 
         justify-content: center
+        margin-bottom: 20px
         
         .redirect
             margin-left: 7px
             text-decoration: none
+            
         
             &:link
                 color: white
@@ -69,7 +84,7 @@
                 color: #2b2b2b
             
             &:hover
-                color: gold
+                color: variable.$base-color
                 text-decoration: underline
                 
            

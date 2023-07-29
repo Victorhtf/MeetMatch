@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Core from './Core.jsx'
-import "./styles/Globals.sass"
+import './Globals/Globals.sass'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(

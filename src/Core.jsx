@@ -1,12 +1,11 @@
-import MainContent from "./Components/MainContent"
-import Sidebar from "./Components/Sidebar"
+import Login from "./Pages/Login/Login"
+import './Globals/Globals.sass'
 
 
 function Core() {
   return (
     <div className="global">
-      <Sidebar/>
-      <MainContent/>
+      <Login/>
     </div>
   )
 }

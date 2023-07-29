@@ -1,10 +1,10 @@
-import React from 'react'
-import "../styles/login.sass"
+import './Login.sass'
 
 const Login = () => {
   return (
     <div className='form-container'>
-        <h1 className='title'>Entrar</h1>
+        <h1 className='cta-name'> MeetMatch</h1>
+        <h1 className='title'>LOGIN</h1>
         <input className='label' type="text" id="1" placeholder='Email ou telefone'/>
         <input className='label' type="password" id="1" placeholder='Senha'/>
         <button className='submit'>Entrar</button>
@@ -17,11 +17,10 @@ const Login = () => {
         </div>
         <div className='newhere'>
           <h7 className='noaccount'>Não tem uma conta?</h7>
-          <a className='redirect' target="_blank" href='https://www.facebook.com' >Comece por aqui</a>
+          <a className='redirect' target="_blank" rel="noopener noreferrer" href='https://www.facebook.com'>Comece por aqui!</a>
         </div>
     </div>
   )
 }
-
 
 export default Login
